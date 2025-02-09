@@ -1,26 +1,18 @@
-"use client";
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-
-
+import Navlink from "./Navlink";
 
 const Navbar = () => {
-    const pathname = usePathname();
-    if(pathname.includes("dashboard")|| pathname.includes("auth")){
-        return null;
-    }else
-      return (
+  return (
     <div>
-         <nav className="flex justify-evenly w-full mx-auto bg-green-600 font-bold text-xl">
-              <Link className="p-2" href={"/home"}>Homepage</Link>
-              <Link className="p-2" href={"/about"}>About</Link>
-              <Link className="p-2" href={"/home"}>Contact</Link>
-              <Link className="p-2" href={"/dashboard"}>Dashboard</Link>
-              <Link className="p-2" href={"/auth/signup"}>SignIn</Link>
-              <Link className="p-2" href={"/auth/signip"}>SignUp</Link>
-            </nav>
+      <nav className="flex justify-evenly w-full mx-auto  font-bold text-xl">
+        <Navlink href={"/home"}>Homepage</Navlink>
+        <Navlink href={"/about"}>About</Navlink>
+        <Navlink href={"/contact"}>Contact</Navlink>
+        <Navlink href={"/dashboard"}>Dashboard</Navlink>
+        <Navlink href={"/auth/signup"}>SignIn</Navlink>
+        <Navlink href={"/auth/signip"}>SignUp</Navlink>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
