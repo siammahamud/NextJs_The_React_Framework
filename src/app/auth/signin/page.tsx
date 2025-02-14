@@ -1,14 +1,21 @@
-    
+import React, { FC } from "react";
 const SignIn: FC = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="w-full max-w-sm bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Sign In</h2>
-        
+        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+          Sign In
+        </h2>
+
         <form className="space-y-4">
           {/* Email Input */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email
+            </label>
             <input
               type="email"
               id="email"
@@ -20,7 +27,12 @@ const SignIn: FC = () => {
 
           {/* Password Input */}
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
             <input
               type="password"
               id="password"
@@ -40,14 +52,18 @@ const SignIn: FC = () => {
 
           {/* Forgot Password Link */}
           <div className="text-center mt-4">
-            <a href="#" className="text-sm text-blue-500 hover:underline">Forgot password?</a>
+            <a href="#" className="text-sm text-blue-500 hover:underline">
+              Forgot password?
+            </a>
           </div>
         </form>
 
         {/* Sign Up Link */}
         <div className="text-center mt-6">
           <span className="text-sm text-gray-600">Dont have an account? </span>
-          <a href="#" className="text-sm text-blue-500 hover:underline">Sign up</a>
+          <a href="#" className="text-sm text-blue-500 hover:underline">
+            Sign up
+          </a>
         </div>
       </div>
     </div>
