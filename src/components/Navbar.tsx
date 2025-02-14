@@ -3,7 +3,7 @@ import Navlink from "./Navlink";
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-evenly w-full mx-auto  font-bold text-xl mb-10">
+      <nav className="flex justify-evenly w-full mx-auto  font-bold text-xl">
         <Navlink href={"/"}>Homepage</Navlink>
         <Navlink href={"/about"}>About</Navlink>
         <Navlink href={"/contact"}>Contact</Navlink>
