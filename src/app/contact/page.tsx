@@ -12,7 +12,7 @@ const ContactPage = () => {
         minSize={1.6}
         maxSize={4}
         particleDensity={100}
-        speed={1}
+        // speed={1}
         className="w-full h-full"
         particleColor="#FF0133"
       />

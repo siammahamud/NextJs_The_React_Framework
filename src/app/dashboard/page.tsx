@@ -12,6 +12,7 @@ const dashboardPage =async ({params}:{
             <Link href={'/dashboard/profile'}>Profile</Link>
             {/* <Link href={'/dashboard/setting'}>setting</Link> */}
             <Link href={`dashboard/article/${articleId}`}>article</Link>
+            <Link href={'/dashboard/setting'}>setting</Link>
         </ul>
         
     </div>
