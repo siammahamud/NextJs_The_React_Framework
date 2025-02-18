@@ -36,7 +36,7 @@ export default function PhotoFeed() {
   return (
     <div className="grid grid-cols-4 gap-4 p-4">
       {images.map((image) => (
-        <Link key={image.id} href={`/photo/${image.id}`} scroll={false}>
+        <Link key={image.id} href={`/photo-feed/${image.id}`} scroll={false}>
           <Image
             width={600}
             height={600}
