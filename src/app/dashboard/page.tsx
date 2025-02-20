@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/card";
 import { BarChart, ShoppingBag, Users, Wallet } from "lucide-react";
 import { Button } from "@/components/Button";
 
@@ -9,16 +8,16 @@ const Dashboard = () => {
       <aside className="w-64 bg-white p-5 shadow-lg hidden md:block">
         <h2 className="text-xl font-bold mb-6">E-Commerce Admin</h2>
         <nav className="space-y-4">
-          <Button variant="ghost" className="w-full flex gap-2">
+          <Button className="w-full flex gap-2">
             <BarChart size={20} /> Dashboard
           </Button>
-          <Button variant="ghost" className="w-full flex gap-2">
+          <Button className="w-full flex gap-2">
             <ShoppingBag size={20} /> Products
           </Button>
-          <Button variant="ghost" className="w-full flex gap-2">
+          <Button className="w-full flex gap-2">
             <Users size={20} /> Customers
           </Button>
-          <Button variant="ghost" className="w-full flex gap-2">
+          <Button className="w-full flex gap-2">
             <Wallet size={20} /> Orders
           </Button>
         </nav>
@@ -29,31 +28,20 @@ const Dashboard = () => {
         <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
 
         {/* Stats Cards */}
+        {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Total Sales</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-3xl font-bold">$12,345</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Total Orders</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-3xl font-bold">567</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Total Customers</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-3xl font-bold">789</p>
-            </CardContent>
-          </Card>
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h2 className="text-xl font-bold mb-4">Total Sales</h2>
+            <p className="text-3xl font-bold">$12,345</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h2 className="text-xl font-bold mb-4">Total Orders</h2>
+            <p className="text-3xl font-bold">567</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h2 className="text-xl font-bold mb-4">Total Customers</h2>
+            <p className="text-3xl font-bold">789</p>
+          </div>
         </div>
 
         {/* Recent Orders */}
